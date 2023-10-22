@@ -293,3 +293,38 @@ div.highlight pre {
 .current {
     color: var(--text-color);
 }
+
+.mobile-title {
+    display: none;
+}
+
+.mobile-title a.brand-image {
+    flex-grow: 0;
+}
+
+.mobile-title .brand-image img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 0;
+    border: 2px solid var(--sidebar-img-border-color);
+}
+
+.mobile-title h1 {
+    margin-top: 0.05em;
+    margin-bottom: 0;
+    margin-left: 0.5em;
+    font-family: 'Playfair Display', Times, serif;
+    font-weight: 900;
+    color: var(--sidebar-h1-color);
+}
+
+@media (max-width: 48em) {
+    .mobile-title {
+        display: flex;
+        padding: 0.5rem 0.5rem 0.5rem 1rem;
+        height: 4rem;
+        background-color: var(--sidebar-bg-color);
+    }
+}
